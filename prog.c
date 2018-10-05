@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 int main(){
-  int num, counter;
+  int num, counter=0;
   scanf("%d", &num);
   counter+=num%5;
   counter+=num%25;
