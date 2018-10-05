@@ -13,5 +13,5 @@ int cnk(int n, int k){
 int main() {
   int x, y;
   scanf("%d%d", &x, &y);
-  printf("%d", cnk(x, y-1));
+  printf("%d", cnk(x, y));
 }
