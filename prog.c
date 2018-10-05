@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <math.h>
 int main(){
   int days, weeks, years;
   scanf("%d", &days);
