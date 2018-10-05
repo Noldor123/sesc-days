@@ -1,13 +1,17 @@
 #include <stdio.h>
-#include <math.h>
-int main(){
-  int num, counter=0;
-  scanf("%d", &num);
-  counter+=floor(num/5);
-  counter+=floor(num/25);
-  counter+=floor(num/125);
-  counter+=floor(num/625);
-  counter+=floor(num/3125);
-  printf("%d", counter);
-  return 0;
+
+int fact(int num){
+  int count=1;
+  for (int i=1;i<=num;i++){
+    count*=i;
+  }
+  return count;
+}
+int cnk(int n, int k){
+  return (fact(n)/fact(k))/fact(n-k);
+}
+int main() {
+  int x, y;
+  scanf("%d%d", &x, &y);
+  printf("%d", cnk(x, y-1));
 }
