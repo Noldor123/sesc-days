@@ -3,11 +3,11 @@
 int main(){
   int num, counter=0;
   scanf("%d", &num);
-  counter+=num%5;
-  counter+=num%25;
-  counter+=num%125;
-  counter+=num%625;
-  counter+=num%3125;
+  counter+=floor(num/5);
+  counter+=floor(num/25);
+  counter+=floor(num/125);
+  counter+=floor(num/625);
+  counter+=floor(num/3125);
   printf("%d", counter);
   return 0;
 }
